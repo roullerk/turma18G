@@ -9,8 +9,11 @@ programa
 		escreva("Digite o indice de poluição : ")
 		leia(indice)
 		
-		se (indice < 0.3)
+		se (indice < 0.3){
 			escreva ("\nNivel de pouluição aceitavel ")
+		}
+			senao
+			
 		se (indice >= 0.3 e indice < 0.4 ){
 			escreva ("\nIndustria 1, vocês devem suspender as atividades devido ao aumento de poluição")
 		}	
@@ -37,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 352; 
+ * @POSICAO-CURSOR = 513; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
