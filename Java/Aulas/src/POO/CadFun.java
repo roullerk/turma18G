@@ -48,7 +48,7 @@ public class CadFun {
 			System.out.println(fun.getNome() + " seu salário é R$ " + fun.salario());
 		}
 		System.out.println("Fim de programa!!");
-
+		sc.close();
 	}
-
+	
 }
