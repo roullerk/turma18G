@@ -2,10 +2,10 @@ package CLASSES;
 
 public class Conta {
 
-	   private int numero; 	
-	   private String cpf;
-	   private double saldo;
-	   private boolean ativa;
+	   protected int numero; 	
+	   protected String cpf;
+	   protected double saldo;
+	   protected boolean ativa;
 	   
 	   public Conta(int numero, String cpf) {
 		   this.numero = numero;
@@ -52,10 +52,10 @@ public class Conta {
 		return saldo;
 	}
 
-	
-	public void Credito (double valor) {
-		saldo += valor;
 
+	
+	public void Credito(double valor) {
+		saldo += valor;
 	
 	}
 	public void Debito (double valor) {
