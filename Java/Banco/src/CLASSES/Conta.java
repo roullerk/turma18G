@@ -2,15 +2,15 @@ package CLASSES;
 
 public class Conta {
 
-	   protected int numero; 	
-	   protected String cpf;
-	   protected double saldo;
-	   protected boolean ativa;
-	   
-	   public Conta(int numero, String cpf) {
-		   this.numero = numero;
-		   this.cpf = cpf;
-	   }
+	protected int numero;
+	protected String cpf;
+	protected double saldo;
+	protected boolean ativa;
+
+	public Conta(int numero, String cpf) {
+		this.numero = numero;
+		this.cpf = cpf;
+	}
 
 	public Conta(int numero) {
 		super();
@@ -52,17 +52,18 @@ public class Conta {
 		return saldo;
 	}
 
-
-	
 	public void Credito(double valor) {
-		saldo += valor;
-	
-	}
-	public void Debito (double valor) {
-		if (saldo >= valor) {
-			saldo -= valor ;
+		if (valor < 0) {
+			saldo = 0;
+		} else {
+			saldo += valor;
 		}
-		else {
+	}
+
+	public void Debito(double valor) {
+		if (saldo >= valor) {
+			saldo -= valor;
+		} else {
 			System.out.println("Saldo insuficiente!");
 		}
 	}
